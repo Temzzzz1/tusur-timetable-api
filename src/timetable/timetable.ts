@@ -1,5 +1,6 @@
-import { IFaculty, IGroup } from "./interfaces/group.interface";
 import fs from 'fs'
+
+import { IFaculty, IGroup } from "./interfaces/group.interface";
 import { ITimetable } from "./interfaces/timetable.interface";
 import { Exception } from "../exceptions/Exception";
 
