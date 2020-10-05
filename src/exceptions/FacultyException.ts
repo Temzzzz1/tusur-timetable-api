@@ -11,7 +11,4 @@ export class FacultyException implements IException {
     public show(value: string) {
         console.error(`${this._name}: ${this._message} ${value}`)
     }
-
-
-
 }
