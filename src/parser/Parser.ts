@@ -1,9 +1,6 @@
-
 import http from "https";
-import { resolve } from "path";
 import fs from 'fs'
 import schedule from 'node-schedule';
-
 
 export class Parser {
 
