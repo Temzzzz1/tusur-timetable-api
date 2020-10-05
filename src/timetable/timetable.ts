@@ -12,7 +12,7 @@ export class Timetable {
      * @param _group name of the group
      * @return JSON object
      */
-    public getByGroudId(_group: string) {
+    public getByGroupId(_group: string) {
         try {
             let data: string = fs.readFileSync("./dist/parser/tusur.json", "utf8")
             let table: ITimetable = JSON.parse(data)
