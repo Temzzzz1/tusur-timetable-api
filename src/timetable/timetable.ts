@@ -18,10 +18,10 @@ export class Timetable {
             let table: ITimetable = JSON.parse(data)
 
             let faculty: IFaculty | undefined = table.faculties.find(faculty => {
-                return faculty.groups.find(Group => Group.name == _group)
+                return faculty.groups.find(group => group.name == _group)
             })
             if (faculty) 
-                return faculty.groups.find(Group => Group.name == _group)
+                return faculty.groups.find(group => group.name == _group)
             else throw Exception.GroupException(_group)
         } catch (err){
             if (err.code == "ENOENT")
