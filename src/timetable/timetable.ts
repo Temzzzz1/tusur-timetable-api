@@ -6,6 +6,11 @@ import { Exception } from "../exceptions/Exception";
 
 export class Timetable {
 
+    /**
+     * Get a timetable by group ID
+     * @param _group name of the group
+     * @return JSON object
+     */
     public getByGroudId(_group: string) {
         try {
             let data: string = fs.readFileSync("./dist/parser/tusur.json", "utf8")
@@ -25,6 +30,11 @@ export class Timetable {
         }
     }
 
+     /**
+     * Get a timetable by faculty name
+     * @param _group name of the faculty
+     * @return JSON object
+     */
     public getFacultyByName(_name: string) {
         try {
             let data: string = fs.readFileSync("./dist/parser/tusur.json", "utf8")
