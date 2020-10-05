@@ -7,8 +7,4 @@ export {
     Timetable
 }
 
-const tt = new Timetable()
 
-Parser.start(1);
-
-tt.getByGroudId("429-1")
