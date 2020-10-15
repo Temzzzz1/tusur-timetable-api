@@ -8,7 +8,7 @@ export class Parser {
 
 
     /**
-     * Start parsing timetable every day
+     * Parse timetable
      * 
      */
     public static async parseTable(): Promise<void> {
